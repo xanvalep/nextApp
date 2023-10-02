@@ -1,0 +1,28 @@
+
+.div1 { grid-area: 2 / 3 / 3 / 8; }
+.div2 { grid-area: 3 /3 / 4 / 8; }
+.div3 { grid-area: 4 / 3 / 5 / 9; }
+.div4 { grid-area: 5 / 3 / 6 / 11; }
+.div5 { grid-area: 6 / 3 / 7 / 8; 
+}
+
+.div6 { grid-area: 7 / 3 / 8 / 8; 
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.aboutSitediv1{
+    grid-area: 3 / 3 / 4 / 7;
+}
+.aboutSitediv2{
+    
+    grid-area: 4 / 3 / 7 / 11;    
+}
+.workSiteDiv1{
+    grid-area: 2 / 3 / 3 / 11; 
+}
+.workSiteDiv2{
+    grid-area: 4 / 3 / 7 / 11;  
+}
+
