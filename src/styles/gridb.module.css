@@ -18,8 +18,8 @@
     z-index: 10;
     outline: 2px solid blueviolet;
     display: flex;
-    justify-content: start;
-    align-items: end;
+    justify-content: flex-start;
+    align-items: flex-end;
 
 }
 .grid__name {
@@ -71,7 +71,7 @@
     outline: 2px solid blueviolet;
     /* background-color: blueviolet; */
     display: flex;
-    justify-content: start;
+    justify-content:flex-start;
     align-items: center;
 }
 .ttlWorks{
