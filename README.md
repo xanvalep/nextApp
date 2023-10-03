@@ -1,7 +1,7 @@
 [![Header](https://www.creative-tim.com/blog/content/images/size/w1140/2021/08/rebranding-post--1-.jpg "Header")](https://www.creative-tim.com/)
 
 Hi there ✋!  
-I'm [Zander](https://www.creative-tim.com/)<img src="https://www.creative-tim.com/assets/logo/logo-ct-white-170d794e447f75aec55c6effdfbedced9dd268ceceece152675ff8f9891e3588.svg" />
+I'm [Zander](https://www.creative-tim.com/)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
@@ -20,24 +20,22 @@ pnpm dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 
-## About Us
+## About Me
 
-Creating your web design from scratch with dedicated designers can be very expensive. Using our solutions you don't have to worry about design. Save time and money by focusing on the business model.
+I am a graphic and multimedia producer 
+I ❤️ the code.
 
-## Our technologies
+## Technologies
 
-Our products are built on top of modern frameworks. Having the coded and the designed versions for the same framework, your designers and developers will talk the same language.
+My developments are built on top of modern frameworks.
 
 <p>
-  <img src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/vue.jpg" width="67.5px" />
-  <img src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/angular.jpg" width="67.5px" />
   <img src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/react.jpg" width="67.5px" />
   <img src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/bootstrap.jpg" width="67.5px" />
   <img src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/sass.jpg" width="67.5px" />
   <img src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/ps.jpg" width="67.5px" />
   <img src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/sketch.jpg" width="67.5px" />
   <img src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/figma.jpg" width="67.5px" />
-  <img src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/icon-laravel.jpg" width="67.5px" />
 </p>
 
 
