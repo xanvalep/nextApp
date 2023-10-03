@@ -1,7 +1,7 @@
 [![Header](https://www.creative-tim.com/blog/content/images/size/w1140/2021/08/rebranding-post--1-.jpg "Header")](https://www.creative-tim.com/)
 
 Hi there ✋!  
-We are [Creative Tim](https://www.creative-tim.com/)<img src="https://www.creative-tim.com/assets/logo/logo-ct-white-170d794e447f75aec55c6effdfbedced9dd268ceceece152675ff8f9891e3588.svg" />
+I'm [Zander](https://www.creative-tim.com/)<img src="https://www.creative-tim.com/assets/logo/logo-ct-white-170d794e447f75aec55c6effdfbedced9dd268ceceece152675ff8f9891e3588.svg" />
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
