@@ -1,6 +1,15 @@
 /* Deep navy blue (#01257D), electric blue (#00FFFF) *rgb(77, 77, 255)*/
 /* --bkg: #5eb3fd;
 	--white: #e7e6e6; */
+  :root {
+    --main-bg-azul:  #4D4DFF;
+    --main-bg-fucsy: #EB15CC;
+    --main-bg-pink: #FF358E;
+    --main-bg-orange: #FF815D;
+    --main-bg-oryelo: #FFC24B;
+    --main-bg-yellow: #F9F871;
+  }
+  
 
 
 * {
@@ -21,8 +30,9 @@ body {
   font-size: 16px;
   line-height: 1.75;
 
-  background-color: #d1cccc;
-	background-image: url(http://www.transparenttextures.com/patterns/paper-fibers.png);
+  background-color: #000000;
+  color:		hsl(240, 100%, 90%);
+	/* background-image: url(http://www.transparenttextures.com/patterns/paper-fibers.png); */
   /* background-color: gray; */
 
 }
@@ -40,6 +50,5 @@ main{
 
 
 a {
-  color: inherit;
   text-decoration: none;
 }
