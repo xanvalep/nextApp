@@ -8,13 +8,17 @@ import { useState } from "react";
    route: '/',
 
  },
+ { label: 'About',
+   route: '/about',
+
+ },
  { 
    label: 'Works',
    route: '/works',
  }
 ]
 export default function Navigation() {
- const [navLink, setProducts] = useState(naviLinks)
+ const [navLink, setLinks] = useState(naviLinks)
  return (
     <>
 
