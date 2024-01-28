@@ -1,7 +1,7 @@
 'use client';
 import styles  from "../styles/gridb.module.css";
-import specific from "../styles/colorsNdSize.module.css";
 import About from "@/components/about/About";
+import Logo from "@/components/svg/logo";
 import dta from "@/js/dta";
 
 //import Works from "@/components/works/Works"; no borrar agregar y editar nuevas cosas
@@ -36,24 +36,7 @@ export default function Home(props) {
     <div >
         <span>
  <span className={ `${styles.grid} `}>
-
-     < span className={`${styles.grid__title }`}>
-     <p className={`${specific.size2} ${specific.line} `}> Hey, My name is  </p>
-   </span>
-   <span className={ `${styles.grid__name }`}>
-      <h1 className={`${specific.size6} ${lilita.className} `}>Zander</h1>
-    </span>
-     <span className={ `${styles.grid__subheader }`}>
-     <p className={`${specific.size3} `}>I build things  for the web
-    <span className={specific.btn}>
-   <button className={` ${lilita.className} `}type="button" onClick={handlerScroll}>
-    scroll
-   </button>
-
-    </span>
-     
-     </p>
-   </span>
+  <span className={ `${styles.grid__hero} `}>  <Logo fillColor="red" />   </span>
 
 
       </span>

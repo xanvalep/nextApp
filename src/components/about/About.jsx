@@ -17,9 +17,9 @@ export default function About(props) {
       style={{ marginTop: "80px", outline: "2px solid blueviolet" }}
     >
       <span className={`${styles.grid} `}>
-        <span className={`${styles.grid__accent}`}>
+        <span className={`${styles.ttlBout}`}>
           <h2
-            className={` ${lilita.className} `}
+            className={` ${lilita.className} ${specific.size4}`}
           >
             About Me
           </h2>

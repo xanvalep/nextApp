@@ -8,13 +8,16 @@ import Loader from '@/components/loader/Loader';
 import dta from '@/js/dta';
 // import ThreeScene from "@/components/ThreeScene";
 
-       const metadata = dta.metadata;
-       const links = dta.routes
 export default function RootLayout({ children }) {
-
   const [loading,setLoading] = useState(false);
-  const [routes,setRoutes] = useState(links); 
+  const [isToggled,setToggled] = useState(false);
+  const metadata = dta.metadata;
+  const links = dta.routesFr;
 
+  {isToggled ? document.body.style.backgroundColor= 'yellow' : document.body.style.backgroundColor= 'skyblue' }
+  const [routes,setRoutes] = useState(links); 
+     /* construyendo la funcion cambios de estado*/
+     console.log(isToggled,'construyendo la funcion toggle',routes)
   useEffect(() => {
  
 
@@ -78,14 +81,17 @@ export default function RootLayout({ children }) {
        {/* <Gsapp/> */}
       <header>
         <nav>
-        <Navigation routes={  
+        <Navigation changeState={isToggled => setToggled(isToggled)} routes={  
     routes
    }/>
         </nav>
       </header>
       <main className="">
+     
      {children}
+   
      </main>
+ 
      {/* <ThreeScene/> */}
      <footer>
 

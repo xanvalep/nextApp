@@ -13,6 +13,16 @@ const routes=[
        route: '/contacto',
      }
     ]
+    const routesFr=[ 
+      
+      { label: 'Home',
+         route: '/',
+      
+       },
+       { label: 'Contact-moi',
+         route: '/contacto',
+       }
+      ]
 
  const documentation =   [
         {
@@ -30,5 +40,5 @@ const routes=[
 
 
       export default {
-       documentation,routes,metadata
+       documentation,routes,metadata,routesFr
     }
