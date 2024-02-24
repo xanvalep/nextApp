@@ -1,5 +1,5 @@
 'use client'
-import styles from '..//..//styles/navbar.module.css';
+
 import Link from "next/link";
 import ToggleButton from './ToogleButton';
 import React, { useState,useEffect } from "react";
@@ -12,17 +12,45 @@ export default function Navigation(props) {
    props.changeState() ? props.changeState (false) : props.changeState(true)
  
    }
-   const toggle2= ()=> {
-    // switchToggled ? setSwitchToggled (false) : setSwitchToggled(true);
-   props.changeState() ? props.changeState (true) : props.changeState(false)
- 
-   }
+
  const route= props.routes;
  return (
-    <>
+  <div id='topNav' className={ `nav `} >
+     
+     <div className="header-side-content">
 
-      <div >
-        <div id='myTopnav' className={ `nav ${styles.nav } 
+			<button className="button" id="menu-button">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		
+		</div>
+
+		<a href="/">logo</a>
+
+		<div className="header-side-content">
+			<nav id="nav-social">
+				<ul className="unstyled">
+					<li><a href="">YouTube</a></li>
+					<li><a href="">Facebook</a></li>
+					<li><a href="">Instagram</a></li>
+				</ul>
+			</nav>
+		</div>
+     
+
+
+       </div>
+ 
+      )
+}
+
+{
+  /*     
+  
+  
+          <div id='myTopnav' classNameNameName={ `nav ${styles.nav } 
    
          
    `} >
@@ -31,7 +59,7 @@ export default function Navigation(props) {
 
       route.map(e =>  {
         return (        
-                <Link className={styles.links } key={e.label} href={e.route}>
+                <Link classNameNameName={styles.links } key={e.label} href={e.route}>
              {e.label}  
              </Link>
         )  
@@ -42,15 +70,14 @@ export default function Navigation(props) {
       </ul>
       
 <div>
-{/*  --------------mejorar logica esto es prueba-------------- */ }
+
   <button  onClick={toggle} data-bs-toggle="collapse" data-bs-target="#main-navbar">click to change </button>
-  <button  onClick={toggle2} data-bs-toggle="collapse" data-bs-target="#main-navbar">click to change</button>
 </div>
 
         </div>
-       
-       </div>    
-    </>
-      );
+  
+  
+  
+  
+  */ 
 }
-

@@ -1,21 +1,14 @@
 'use client';
 import styles  from "../styles/gridb.module.css";
 import About from "@/components/about/About";
-import Logo from "@/components/svg/logo";
+import Logo from "@/components/svg/Logo";
 import dta from "@/js/dta";
 
 //import Works from "@/components/works/Works"; no borrar agregar y editar nuevas cosas
 import React, { useLayoutEffect, useRef,useState,useEffect } from "react";
 //import gsap from "gsap";
 //import { ScrollTrigger} from "gsap/ScrollTrigger";
-import { Lilita_One } from 'next/font/google';
 
-
-const lilita = Lilita_One({
-  variable: '--font-lilita',
-  subsets: ['latin'],
-  weight: [ '400']
-})
 
 const info = dta.documentation[0];
 export default function Home(props) {

@@ -2,6 +2,7 @@
 // import Gsapp from '@/components/Gsapp';
 import './globals.css'
 import Navigation from "@/components/navigation/Navigation";
+import PageMenu from '@/components/navigation/PageMenu';
 import Foot from '@/components/footer/Foot';
 import React, { useRef,useState,useEffect } from "react";
 import Loader from '@/components/loader/Loader';
@@ -14,7 +15,7 @@ export default function RootLayout({ children }) {
   const metadata = dta.metadata;
   const links = dta.routesFr;
 
-  {isToggled ? document.body.style.backgroundColor= 'yellow' : document.body.style.backgroundColor= 'skyblue' }
+  {isToggled ? document.body.style.backgroundColor= 'yellow' : console.log('yeah'); }
   const [routes,setRoutes] = useState(links); 
      /* construyendo la funcion cambios de estado*/
      console.log(isToggled,'construyendo la funcion toggle',routes)
@@ -27,14 +28,14 @@ export default function RootLayout({ children }) {
     function animationNav(scrollPos) {
       // Do something with the scroll position
 
-      let poin2 = document.getElementById('myTopnav');
+      let poin2 = document.getElementById('topNav');
  
       if (scrollPos > 88) {
-        poin2.style.top = "-88px";
+        poin2.style.color = "green";
 
       }
       if (scrollPos < 88) {
-        poin2.style.top = "0";
+        poin2.style.color = "blue";
 
       }
     }
@@ -57,7 +58,7 @@ export default function RootLayout({ children }) {
   setLoading(true)
   setTimeout(() => { 
     setLoading(false)
-   },3000)
+   },8000)
 
   },[]);
   
@@ -82,12 +83,14 @@ export default function RootLayout({ children }) {
       <header>
         <nav>
         <Navigation changeState={isToggled => setToggled(isToggled)} routes={  
-    routes
-   }/>
+          routes
+        }/>
+        {/** <PageMenu/> */}
+        <PageMenu/>
         </nav>
       </header>
       <main className="">
-     
+      
      {children}
    
      </main>

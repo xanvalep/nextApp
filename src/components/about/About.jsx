@@ -19,10 +19,15 @@ export default function About(props) {
       <span className={`${styles.grid} `}>
         <span className={`${styles.ttlBout}`}>
           <h2
-            className={` ${lilita.className} ${specific.size4}`}
+            className={` ${lilita.className} `}
           >
             About Me
           </h2>
+        </span>
+        <span
+        >
+    
+   
         </span>
         <span
           className={`${styles.grid__description} ${specific.size1}`}
