@@ -85,8 +85,7 @@ export default function RootLayout({ children }) {
         <Navigation changeState={isToggled => setToggled(isToggled)} routes={  
           routes
         }/>
-        {/** <PageMenu/> */}
-        <PageMenu/>
+   
         </nav>
       </header>
       <main className="">

@@ -1,26 +1,4 @@
 
-.nav{
-   
-   overflow: hidden;  
-    min-height: 88px;
-    width: 1140px;
-    display: flex   ;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-    top: 0px;
-    position: fixed;
-    left:50%;
-    transition:top 0.5s ease;
-    transform: translate(-50%, 0%);
-    z-index: 1000;
-    background-color: red;
-    
-  }
-
-
-
 
   /*
 

@@ -1,25 +1,26 @@
 'use client'
-
+import PageMenu from "./PageMenu";
 import Link from "next/link";
 import ToggleButton from './ToogleButton';
 import React, { useState,useEffect } from "react";
 
 export default function Navigation(props) {
-
+  const [isToggled,setToggled] = useState(false);
   
   const toggle= ()=> {
     // switchToggled ? setSwitchToggled (false) : setSwitchToggled(true);
-   props.changeState() ? props.changeState (false) : props.changeState(true)
- 
+      setToggled(!isToggled)
    }
 
- const route= props.routes;
+
  return (
   <div id='topNav' className={ `nav `} >
-     
+     <div className="menu"> 
+
      <div className="header-side-content">
 
-			<button className="button" id="menu-button">
+			<button onClick={toggle} className="button" id="menu-button">
+        {isToggled ? 'toggled' : 'toggle'}
 				<span></span>
 				<span></span>
 				<span></span>
@@ -40,7 +41,9 @@ export default function Navigation(props) {
 		</div>
      
 
+     </div>
 
+         <PageMenu routes={props.routes} status={isToggled}/>
        </div>
  
       )

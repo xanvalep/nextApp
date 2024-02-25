@@ -1,20 +1,28 @@
 'use client'
-
+import Link from "next/link";
 
 export default function PageMenu(props) {
-
+const routes = props.routes;	
  return (
-    <div id="menu-container" className="pageMenu" >
+    
+    <div id="menu-container" className={props.status ? "pMenu" : "pMenInac"} >
 
-<div >
+
 		<ul class="unstyled">
-			<li><a href="">Home</a></li>
-			<li><a href="">Destinations</a></li>
-			<li><a href="">Tour Packages</a></li>
-			<li><a href="">Travel Tips</a></li>
-			<li><a href="">Contact Us</a></li>
+		
+			{
+                 routes.map(e =>  {
+					return (        
+							<Link className="unstyled" key={e.label} href={e.route}>
+						 {e.label}  
+						 </Link>
+					)  
+					}) 
+
+
+			}
 		</ul>
-	</div>
+
   </div>
       )
 }
