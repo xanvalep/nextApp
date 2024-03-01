@@ -19,8 +19,7 @@ export default function Navigation(props) {
 
      <div className="header-side-content">
 
-			<button onClick={toggle} className="button" id="menu-button">
-        {isToggled ? 'toggled' : 'toggle'}
+			<button onClick={toggle} className= {isToggled ? 'button toggled' : 'button toggle'} id="menu-button">
 				<span></span>
 				<span></span>
 				<span></span>
