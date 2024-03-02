@@ -28,14 +28,16 @@ export default function RootLayout({ children }) {
     function animationNav(scrollPos) {
       // Do something with the scroll position
 
-      let poin2 = document.getElementById('topNav');
+      let mntop= document.getElementById('mntop');
  
       if (scrollPos > 88) {
-        poin2.style.color = "green";
+        mntop.style.backgroundColor = "gray"
+        
 
       }
       if (scrollPos < 88) {
-        poin2.style.color = "blue";
+        mntop.style.backgroundColor = "transparent"
+       
 
       }
     }

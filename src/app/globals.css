@@ -43,6 +43,7 @@ body {
 
 a{
  text-decoration: none;
+ color: black;
 }
 
 
@@ -118,12 +119,18 @@ a{
   height: 2.5rem;
   align-items: center;
   justify-content: center;
+  background-color: transparent;
+  border:none;
+}
+#menu-button:hover span:nth-child(2) {
+  width: 12.5px;
+  transition: 0.7s;
 }
 #menu-button span{
   width: 25px;
   height: 2.5px;
   background-color: black;
-  transition: transform .3s ease-in-out,opacity .3s ease-in-out,background-color .2s ease-in-out	;
+  transition: transform .3s ease-in-out,opacity .3s ease-in-out,background-color .2s ease-in-out;
 }
 
 
@@ -160,8 +167,7 @@ main{
 
 /* 
 
-about loader page animation find out in layout file
-HTML: <div class="loader"></div> 
+
 
 
 */
@@ -182,7 +188,7 @@ HTML: <div class="loader"></div>
 
 /* Air */
 svg{
-  width: 500px;
+  width: 600px;
   font-weight: bold;
 }
 svg text{

@@ -4,8 +4,9 @@ export default function Foot() {
   return (
     <div>
       <span className={styles.footer}>
-      <span><p>Author: Hege Refsnes</p>
-      <p><a href="mailto:hege@example.com">hege@example.com</a></p></span>
+      <span>
+        <p>&#169;2024 Lettuce Studios</p>
+      </span>
       </span>
       
     </div>
