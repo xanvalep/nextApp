@@ -1,16 +1,27 @@
 import {useState } from "react";
-import styleBut from "../../styles/navbar.module.css";
-export default function ToogleButton() {
+
+export default function ToogleButton({ initialState, updateState }) {
 // crea un estado por el switch 
-const [switchToggled,setSwitchToggled]= useState(false);
+const [buttonState, setButtonState] = useState(initialState);
    
-const toggle= ()=> {
-  switchToggled ? setSwitchToggled (false) : setSwitchToggled(true);
-  console.log(switchToggled);
+const handleClick = () => {
+  const newState = !buttonState; // Toggle the state
+  setButtonState(newState); // Update the state
+  updateState(newState); // Notify the parent about the state change
+ console.log("hello");
 }
-return(
-    <div>
-     <button  onClick={toggle} className={switchToggled ? "button active" : "button"}  data-bs-toggle="collapse" data-bs-target="#main-navbar"></button>
-    </div>
-)
+return (
+  <div>
+    <button
+    id="menu-button"
+      onClick={handleClick}
+      className={buttonState ? "button toggled" : "button toggle"}
+      
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+);
 }

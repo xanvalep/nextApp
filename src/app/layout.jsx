@@ -2,7 +2,6 @@
 // import Gsapp from '@/components/Gsapp';
 import './globals.css'
 import Navigation from "@/components/navigation/Navigation";
-import PageMenu from '@/components/navigation/PageMenu';
 import Foot from '@/components/footer/Foot';
 import React, { useRef,useState,useEffect } from "react";
 import Loader from '@/components/loader/Loader';
@@ -15,10 +14,8 @@ export default function RootLayout({ children }) {
   const metadata = dta.metadata;
   const links = dta.routesFr;
 
-  {isToggled ? document.body.style.backgroundColor= 'yellow' : console.log('yeah'); }
   const [routes,setRoutes] = useState(links); 
-     /* construyendo la funcion cambios de estado*/
-     console.log(isToggled,'construyendo la funcion toggle',routes)
+
   useEffect(() => {
  
 

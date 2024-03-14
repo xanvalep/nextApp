@@ -1,85 +1,50 @@
-'use client'
+"use client";
 import PageMenu from "./PageMenu";
-import Link from "next/link";
-import ToggleButton from './ToogleButton';
-import React, { useState,useEffect } from "react";
+import ToogleButton from "./ToogleButton";
+import React, { useState } from "react";
 
 export default function Navigation(props) {
-  const [isToggled,setToggled] = useState(false);
-  
-  const toggle= ()=> {
-    // switchToggled ? setSwitchToggled (false) : setSwitchToggled(true);
-      setToggled(!isToggled)
-   }
+  const [childState, setChildState] = useState(false);
 
+  const updateChildState = (newState) => {
+    setChildState(newState);
+  };
 
- return (
-  <div id='topNav' className={ `nav `} >
-     <div id="mntop" className="menu"> 
+  return (
+    <div id="topNav" className={`nav `}>
+      <div id="mntop" className="menu">
+        <div className="header-side-content">
+          <ToogleButton
+            initialState={childState}
+            updateState={updateChildState}
+          />
 
-     <div className="header-side-content">
+          {console.log(childState)}
+        </div>
 
-			<button onClick={toggle} className= {isToggled ? 'button toggled' : 'button toggle'} id="menu-button">
-				<span></span>
-				<span></span>
-				<span></span>
-			</button>
-		
-		</div>
+        <a href="/">logo</a>
 
-		<a href="/">logo</a>
+        <div className="header-side-content">
+          <nav id="nav-social">
+            <ul className="unstyled">
+              <li>
+                <a href="">YouTube</a>
+              </li>
+              <li>
+                <a href="">Facebook</a>
+              </li>
+              <li>
+                <a href="">Instagram</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
 
-		<div className="header-side-content">
-			<nav id="nav-social">
-				<ul className="unstyled">
-					<li><a href="">YouTube</a></li>
-					<li><a href="">Facebook</a></li>
-					<li><a href="">Instagram</a></li>
-				</ul>
-			</nav>
-		</div>
-     
-
-     </div>
-
-         <PageMenu routes={props.routes} status={isToggled}/>
-       </div>
- 
-      )
+      <PageMenu routes={props.routes} status={childState} />
+    </div>
+  );
 }
 
 {
-  /*     
-  
-  
-          <div id='myTopnav' classNameNameName={ `nav ${styles.nav } 
-   
-         
-   `} >
-        <ul >
-        {
-
-      route.map(e =>  {
-        return (        
-                <Link classNameNameName={styles.links } key={e.label} href={e.route}>
-             {e.label}  
-             </Link>
-        )  
-        }) 
-      }
-
-
-      </ul>
-      
-<div>
-
-  <button  onClick={toggle} data-bs-toggle="collapse" data-bs-target="#main-navbar">click to change </button>
-</div>
-
-        </div>
-  
-  
-  
-  
-  */ 
 }

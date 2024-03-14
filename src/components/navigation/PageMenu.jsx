@@ -8,7 +8,7 @@ const routes = props.routes;
     <div id="menu-container" className={props.status ? "pMenu" : "pMenInac"} >
 
 
-		<ul class="unstyled">
+		<ul className="unstyled">
 		
 			{
                  routes.map(e =>  {
